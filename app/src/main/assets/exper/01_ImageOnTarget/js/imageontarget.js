@@ -27,7 +27,7 @@ var World = {
 		*/
 
 		/* Create overlay for page one */
-		var imgOne = new AR.ImageResource("assets/imageOne.png");
+		var imgOne = new AR.ImageResource("assets/rabanito_One.png");
 		var overlayOne = new AR.ImageDrawable(imgOne, 1, {
 			translate: {
 				x:-0.15
