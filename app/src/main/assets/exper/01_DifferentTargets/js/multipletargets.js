@@ -14,7 +14,7 @@ var World = {
 
 			Adding multiple targets to a target collection is straightforward. Simply follow our Target Management Tool documentation. Each target in the target collection is identified by its target name. By using this target name, it is possible to create an AR.ImageTrackable for every target in the target collection.
 		*/
-		this.targetCollectionResource = new AR.TargetCollectionResource("assets/magazine.wtc", {
+		this.targetCollectionResource = new AR.TargetCollectionResource("assets/tracker_farm_multi.wtc", {
 		});
 
 		this.tracker = new AR.ImageTracker(this.targetCollectionResource, {
@@ -29,7 +29,7 @@ var World = {
 		*/
 
 		// Create overlay for page one
-		var imgOne = new AR.ImageResource("assets/imageOne.png");
+		var imgOne = new AR.ImageResource("assets/rabanito_One.png");
 		var overlayOne = new AR.ImageDrawable(imgOne, 1, {
 			translate: {
 				x: -0.15,
@@ -53,7 +53,7 @@ var World = {
 		/*
 			Similar to the first part, the image resource and the AR.ImageDrawable for the second overlay are created.
 		*/
-		var imgTwo = new AR.ImageResource("assets/imageTwo.png");
+		var imgTwo = new AR.ImageResource("assets/albahaca_Two.png");
 		var overlayTwo = new AR.ImageDrawable(imgTwo, 0.5, {
 			translate: {
 				x: 0.12,
@@ -88,9 +88,9 @@ var World = {
 		var cssDivSurfer = " style='display: table-cell;vertical-align: middle; text-align: left; padding-right: 15px; width: 38px'";
 		var cssDivBiker = " style='display: table-cell;vertical-align: middle; text-align: left; padding-right: 15px;'";
 		document.getElementById('loadingMessage').innerHTML =
-			"<div" + cssDivInstructions + ">Scan Target &#35;1 (surfer) or &#35;2 (biker):</div>" +
-			"<div" + cssDivSurfer + "><img src='assets/surfer.png'></img></div>" +
-			"<div" + cssDivBiker + "><img src='assets/bike.png'></img></div>";
+			"<div" + cssDivInstructions + ">Scan Target &#35;1 (Rabanito) or &#35;2 (Albahaca):</div>" +
+			"<div" + cssDivSurfer + "><img src='assets/rabanito.jpg'></img></div>" +
+			"<div" + cssDivBiker + "><img src='assets/albahaca.jpg'></img></div>";
 	}
 };
 
