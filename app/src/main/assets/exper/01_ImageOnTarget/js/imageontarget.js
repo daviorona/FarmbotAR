@@ -12,7 +12,7 @@ var World = {
 			Important: If you replace the tracker file with your own, make sure to change the target name accordingly.
 			Use a specific target name to respond only to a certain target or use a wildcard to respond to any or a certain group of targets.
 		*/
-        this.targetCollectionResource = new AR.TargetCollectionResource("assets/tracker_rab.wtc", {
+        this.targetCollectionResource = new AR.TargetCollectionResource("assets/tracker_farm.wtc", {
         });
 
         this.tracker = new AR.ImageTracker(this.targetCollectionResource, {
@@ -63,7 +63,7 @@ var World = {
 		var cssDivRight = " style='display: table-cell;vertical-align: middle; text-align: left;'";
 		document.getElementById('loadingMessage').innerHTML =
 			"<div" + cssDivLeft + ">Scan Target &#35;1 (RABANITO):</div>" +
-			"<div" + cssDivRight + "><img src='assets/rabanito.png'></img></div>";
+			"<div" + cssDivRight + "><img src='assets/rabanito.jpg'></img></div>";
 	}
 };
 

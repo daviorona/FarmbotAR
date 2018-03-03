@@ -14,7 +14,7 @@ var World = {
 
 			Adding multiple targets to a target collection is straightforward. Simply follow our Target Management Tool documentation. Each target in the target collection is identified by its target name. By using this target name, it is possible to create an AR.ImageTrackable for every target in the target collection.
 		*/
-		this.targetCollectionResource = new AR.TargetCollectionResource("assets/tracker_farm_multi.wtc", {
+		this.targetCollectionResource = new AR.TargetCollectionResource("assets/tracker_farm.wtc", {
 		});
 
 		this.tracker = new AR.ImageTracker(this.targetCollectionResource, {
@@ -40,7 +40,7 @@ var World = {
 			This combines everything by creating an AR.ImageTrackable with the previously created tracker, the name of the image target as defined in the target collection and the drawable that should augment the recognized image.
 			Note that this time a specific target name is used to create a specific augmentation for that exact target.
 		*/
-		var pageOne = new AR.ImageTrackable(this.tracker, "pageOne", {
+		var pageOne = new AR.ImageTrackable(this.tracker, "rabanito", {
 			drawables: {
 				cam: overlayOne
 			},
@@ -64,7 +64,7 @@ var World = {
 		/*
 			The AR.ImageTrackable for the second page uses the same tracker but with a different target name and the second overlay.
 		*/
-		var pageTwo = new AR.ImageTrackable(this.tracker, "pageTwo", {
+		var pageTwo = new AR.ImageTrackable(this.tracker, "albahaca", {
 			drawables: {
 				cam: overlayTwo
 			},
